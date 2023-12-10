@@ -34,7 +34,7 @@ export const getStaticProps = (async (context) => {
 })
 export async function getStaticPaths() {
     
-const res = await fetch('https://jsonplaceholder.typicode.com/users')
+const res = await fetch('https://www.bocaweb.com.br/apibocaweb?nome=animal')
     const repo = await res.json()
     const users = await repo;
     const paths = users.map((user, index) => {
